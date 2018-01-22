@@ -23,19 +23,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(align|as|atomic|sync|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|prototype|public|record|reduce|ref|require|return|scan|select|serial|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
+			<string>\b(align|as|atomic|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|prototype|public|record|reduce|ref|require|return|scan|select|serial|sync|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
 			<string>keyword.control.chapel</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(bool|real|int|uint|imag|complex|dmap|domain|opaque|string|range|subdomain|tuple)\b</string>
+			<string>\b(bool|complex|dmap|domain|imag|int|opaque|range|real|string|subdomain|tuple|uint)\b</string>
 			<key>name</key>
 			<string>storage.type.chapel</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(config|const|param|private|public|sparse|single|type|enum)\b</string>
+			<string>\b(config|const|enum|param|private|public|single|sparse|sync|type)\b</string>
 			<key>name</key>
 			<string>storage.modifier.chapel</string>
 		</dict>
@@ -53,7 +53,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(this|super|these|here|Locales|LocaleSpace|numLocales|locale|FileAccessMode)\b</string>
+			<string>\b(FileAccessMode|here|LocaleSpace|Locales|locale|numLocales|super|these|this)\b</string>
 			<key>name</key>
 			<string>variable.language.chapel</string>
 		</dict>
@@ -269,8 +269,7 @@
 		<dict>
 			<key>match</key>
 			<string>(?x)\b(
-              	abs | max | min | sqrt | write | writeln | read | readln | open | close | 
-				exit
+              	 abs | close | exit| max | min | open | read | readln | sqrt | write | writeln
 			
 			)\b</string>
 			<key>name</key>
@@ -379,7 +378,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(align|as|atomic|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|public|record|reduce|ref|require|return|scan|select|serial|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
+			<string>\b(align|as|atomic|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|public|record|reduce|ref|require|return|scan|select|serial|single|sync|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.chapel</string>
 		</dict>
