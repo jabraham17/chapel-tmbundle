@@ -23,7 +23,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(align|as|atomic|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|prototype|public|record|reduce|ref|require|return|scan|select|serial|sync|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
+			<string>\b(align|as|atomic|begin|borrowed|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|owned|override|pragma|private|proc|prototype|public|record|reduce|ref|require|return|scan|select|serial|shared|sync|then|throw|throws|try|union|unmanaged|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
 			<string>keyword.control.chapel</string>
 		</dict>
@@ -35,7 +35,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(config|const|enum|param|private|public|single|sparse|sync|type)\b</string>
+                        <string>\b(borrowed|config|const|enum|owned|param|private|public|single|shared|sparse|sync|type|unmanaged)\b</string>
 			<key>name</key>
 			<string>storage.modifier.chapel</string>
 		</dict>
@@ -378,7 +378,7 @@
 		<key>illegal_names</key>
 		<dict>
 			<key>match</key>
-			<string>\b(align|as|atomic|begin|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|pragma|private|proc|public|record|reduce|ref|require|return|scan|select|serial|single|sync|then|throw|throws|try|union|use|var|when|where|while|with|yield|zip)\b</string>
+			<string>\b(align|as|atomic|begin|borrowed|break|by|catch|class|cobegin|coforall|continue|delete|dmapped|do|else|enum|except|export|extern|for|forall|if|index|inline|in|inout|iter|label|lambda|let|local|module|new|noinit|on|only|otherwise|out|owned|override|pragma|private|proc|public|record|reduce|ref|require|return|scan|select|serial|shared|single|sync|then|throw|throws|try|union|unmanaged|use|var|when|where|while|with|yield|zip)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.name.chapel</string>
 		</dict>
