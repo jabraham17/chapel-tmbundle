@@ -121,7 +121,11 @@
 					<key>include</key>
 					<string>#string_escaped_char</string>
 				</dict>
-			</array>
+				<dict>
+                                        <key>include</key>
+                                        <string>#string_placeholder</string>
+                                </dict>
+			</array>			
 		</dict>
 		<dict>
 			<key>match</key>
