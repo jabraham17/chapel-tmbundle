@@ -279,9 +279,9 @@
 			<key>name</key>
 			<string>support.function.builtin.chapel</string>
 		</dict>
-		<key>comments</key>
-		<dict>
-			<key>patterns</key>
+        <key>blockcomments</key>
+        <dict>
+            <key>patterns</key>
 			<array>
 				<dict>
 					<key>captures</key>
@@ -316,10 +316,20 @@
                     <array>
                         <dict>
                             <key>include</key>
-			                <string>#comments</string>
+			                <string>#blockcomments</string>
                         </dict>
                     </array>
 				</dict>
+            </array>
+        </dict>
+		<key>comments</key>
+		<dict>
+			<key>patterns</key>
+            <array>
+                <dict>
+                    <key>include</key>
+                    <string>#blockcomments</string>
+                </dict>
 				<dict>
 					<key>match</key>
 					<string>\*/.*\n</string>
